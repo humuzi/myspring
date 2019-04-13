@@ -55,7 +55,7 @@ public class ArticlesController {
      }
 
 
-     @DeleteMapping("/deleteArticles")
+     @PostMapping("/deleteArticles")
     public JSONObject oldDeleteArticle(@RequestBody JSONObject data){
         JSONObject json = new JSONObject();
         json.put("result",Boolean.TRUE);
